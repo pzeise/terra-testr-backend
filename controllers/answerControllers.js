@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    Answer.findById(req.params.id)
+    Answer.findOne({_id: {$ne: req.params.id}})
     .then(answer => {
         res.json(answer)
     })
