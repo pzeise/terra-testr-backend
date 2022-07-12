@@ -31,9 +31,11 @@ app.use(cookieParser())
 
 //Controllers 
 const answerControllers = require('./controllers/answerControllers')
+const userControllers = require('./controllers/userControllers')
 
 
 app.use('/answer', answerControllers)
+app.use('/user', userControllers)
 app.use('/node_modules', express.static(__dirname + '/node_modules'))
 
 
