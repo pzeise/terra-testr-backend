@@ -6,7 +6,7 @@ const Answer = require('../models/answer-model')
 
 
 router.get('/', (req, res) => {
-    Answer.find({})
+    Answer.findOne({})
     .then(answer => {
         res.json(answer)
     })
@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
+    console.log('hit the not route')
     Answer.findOne({_id: {$ne: req.params.id}})
     .then(answer => {
         res.json(answer)
