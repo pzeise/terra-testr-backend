@@ -16,7 +16,7 @@ router.post('/login', async (req, res) => {
     const payload = ticket.getPayload()
 
     let user = await User.findOne({ googleId: payload?.sub })
-        .populate('completed')
+        // .populate('completed')
     if (!user) {
         user = await new User({
             userName: payload?.name,
@@ -44,7 +44,7 @@ router.get('/me', async (req, res) => {
             const payload = ticket.getPayload()
 
             let user = await User.findOne({ googleId: payload?.sub })
-                .populate('completed')
+                // .populate('completed')
             res.json({ authenticated: true, user })
         } catch (err) {
             console.log(err)
