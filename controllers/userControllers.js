@@ -19,7 +19,7 @@ router.post('/login', async (req, res) => {
         .populate('completed')
     if (!user) {
         user = await new User({
-            name: payload?.name,
+            userName: payload?.name,
             avatar: payload?.picture,
             completed: [],
             googleId: payload?.sub
@@ -33,7 +33,7 @@ router.post('/login', async (req, res) => {
 
 router.get('/me', async (req, res) => {
     const { token } = req.headers
-    console.log(token)
+
     if (token) {
         try {
             const ticket = await client.verifyIdToken({
