@@ -31,6 +31,21 @@ router.post('/login', async (req, res) => {
     res.json({ user, token })
 })
 
+router.put('/:userId/:answerId/:hints', async (req, res) => {
+    User.findByIdAndUpdate(req.params.userId, {
+        $push: {
+            completed: {
+                id: req.params.answerId, 
+                hints: req.params.hints
+            }
+        }
+    })
+    .then(element => res.json(element))
+    .catch(console.error)
+})
+
+
+
 router.get('/me', async (req, res) => {
     const { token } = req.headers
 
