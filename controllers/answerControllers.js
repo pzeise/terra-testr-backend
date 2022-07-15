@@ -5,19 +5,21 @@ const axios = require('axios')
 const Answer = require('../models/answer-model')
 
 
-router.get('/', (req, res) => {
-    Answer.findOne({})
+
+router.get('/:id', (req, res) => {
+    console.log('hit id route')
+    Answer.findOne({_id: req.params.id})
     .then(answer => {
         res.json(answer)
     })
     .catch(console.error)
 })
 
-router.get('/:id', (req, res) => {
-    console.log('hit the not route')
-    Answer.findOne({_id: {$ne: req.params.id}})
-    .then(answer => {
-        res.json(answer)
+router.get('/', (req, res) => {
+    console.log('hit base route')
+    Answer.find({})
+    .then(answers => {
+        res.json(answers)
     })
     .catch(console.error)
 })
