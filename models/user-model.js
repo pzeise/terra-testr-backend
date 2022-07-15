@@ -10,7 +10,10 @@ const UserSchema = new mongoose.Schema(
             index: { collation: {locale: 'en', strength:2 }}
         },
         avatar : String,
-        completed: [{type: ObjectId, ref: 'Answer'}],
+        completed: [{
+            hints: Number,
+            id: {type: ObjectId, ref: 'Answer'}
+        }],
         googleId: { 
             type: String,
             unique: true
