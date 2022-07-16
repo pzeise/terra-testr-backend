@@ -32,7 +32,7 @@ router.post('/login', async (req, res) => {
 })
 
 router.put('/:userId/:answerId/:hints', async (req, res) => {
-    User.findByIdAndUpdate(req.params.userId, {
+    await User.findByIdAndUpdate(req.params.userId, {
         $push: {
             completed: {
                 id: req.params.answerId, 
