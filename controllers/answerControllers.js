@@ -3,11 +3,11 @@ const router = express.Router()
 const axios = require('axios')
 
 const Answer = require('../models/answer-model')
+const User = require('../models/user-model')
 
 
 
 router.get('/:id', (req, res) => {
-    console.log('hit id route')
     Answer.findOne({_id: req.params.id})
     .then(answer => {
         res.json(answer)
@@ -15,12 +15,23 @@ router.get('/:id', (req, res) => {
     .catch(console.error)
 })
 
-router.get('/', (req, res) => {
+router.get('/forUser/:userId', (req, res) => {
+    let answers = {}
     Answer.find({})
-    .then(answers => {
-        res.json(answers)
+    .then(async (element) => {
+        answers = element
+        return await User.findById(req.params.userId)
     })
-    .catch(console.error)
+    .then(user => {
+        user.completed.forEach(puzzle => {
+            let x = answers.findIndex(el => el._id == puzzle.id)
+            answers[x].show = true
+            answers[x].hints = puzzle.hints
+        })
+        return answers
+    })
+    .then(element => res.json(element))
+    .catch(console.error)        
 })
 
 router.post('/', (req, res) => {

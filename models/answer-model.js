@@ -17,7 +17,9 @@ const AnswerSchema = new mongoose.Schema(
             image: String,
             lat: Number, 
             lng: Number
-        }
+        },
+        show: {type: Boolean, default: false},
+        hints: Number
     }
 )
 
