@@ -3,10 +3,10 @@ const ObjectId = mongoose.Schema.Types.ObjectId
 
 const AnswerSchema = new mongoose.Schema(
     {
-        _id: {
-            type: String, 
-            required: true
-        },
+        // _id: {
+        //     type: String, 
+        //     required: true
+        // },
         locations: 
             [{
                 lat: {type: Number},
@@ -17,7 +17,9 @@ const AnswerSchema = new mongoose.Schema(
             image: String,
             lat: Number, 
             lng: Number
-        }
+        },
+        show: {type: Boolean, default: false},
+        hints: Number
     }
 )
 
