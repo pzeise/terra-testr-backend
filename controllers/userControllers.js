@@ -32,6 +32,7 @@ router.post('/login', async (req, res) => {
 })
 
 router.put('/:userId/:answerId/:hints', async (req, res) => {
+    console.log('hit the win route')
     await User.findByIdAndUpdate(req.params.userId, {
         $push: {
             completed: {
@@ -40,7 +41,14 @@ router.put('/:userId/:answerId/:hints', async (req, res) => {
             }
         }
     })
-    .then(element => res.json(element))
+    .then( async (element) => {
+        console.log(element)
+        return await User.findById(element._id)
+    })
+    .then(user => {
+        console.log(user)
+        res.json(user)
+    })
     .catch(console.error)
 })
 
