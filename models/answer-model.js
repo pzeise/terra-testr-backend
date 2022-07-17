@@ -3,10 +3,10 @@ const ObjectId = mongoose.Schema.Types.ObjectId
 
 const AnswerSchema = new mongoose.Schema(
     {
-        _id: {
-            type: String, 
-            required: true
-        },
+        // _id: {
+        //     type: String, 
+        //     required: true
+        // },
         locations: 
             [{
                 lat: {type: Number},
