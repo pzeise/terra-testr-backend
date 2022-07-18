@@ -100,16 +100,16 @@
     {
         "_id": "628d15686e8da9eeb8503263",
         "locations": [
-            { "lat": 55.69401029216563, "lng": 12.59420517806216 },
-            { "lat": 55.68730412137482, "lng": 12.590271921486199 },
-            { "lat": 55.692682223194396, "lng": 12.598692439242086 }
+            { "lat": 48.872521501536255, "lng": 2.264385944711481 },
+            { "lat": 48.87045838184212, "lng": 2.305163531792208 },
+            { "lat": 48.8737282902937, "lng": 2.2943374542452952 }
         ],
         "endState": {
-            "title": "TEST 6",
-            "image": "https://scandification.com/wp-content/uploads/2021/12/Little-Mermaid-Statue-1-scaled.jpg",
-            "lat": 55.692682223194396,
-            "lng": 12.598692439242086
-        }
+            "title": "Paris, France",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Arc_de_Triomphe%2C_Paris_21_October_2010.jpg",
+            "lat": 48.8737282902937,
+            "lng": 2.2943374542452952
+        }  
     },
     {
         "_id": "628d15686e8da9eeb8503264",
