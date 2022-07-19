@@ -42,11 +42,9 @@ router.put('/:userId/:answerId/:hints', async (req, res) => {
         }
     })
     .then( async (element) => {
-        console.log(element)
         return await User.findById(element._id)
     })
     .then(user => {
-        console.log(user)
         res.json(user)
     })
     .catch(console.error)

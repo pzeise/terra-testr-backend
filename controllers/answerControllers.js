@@ -36,7 +36,6 @@ router.get('/forUser/:userId', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    console.log(req.body)
     let ans = req.body
     Answer.create({
         endState: {
@@ -60,6 +59,8 @@ router.post('/', (req, res) => {
             }]
     })
     .then(answer => {
+        answer.owner.push(ans.user)
+        answer.save()
         res.json(answer)
     })
     .catch(console.error)
