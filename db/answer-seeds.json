@@ -128,15 +128,15 @@
     {
         "_id": "628d15686e8da9eeb8503265",
         "locations": [
-            { "lat": -22.98711901523346, "lng": -43.20114255221288 },
+            { "lat": 34.70012656873035, "lng": 135.5238596665538 },
             { "lat": -22.933951551597875, "lng": -43.17621104874066 },
-            { "lat": -22.95187694840569, "lng": -43.211901104296324 }
+            { "lat": 34.68660434392351, "lng": 135.52589539103317 }
         ],
         "endState": {
-            "title": "Rio de Janeiro, Brazil",
-            "image": "https://www.avianca.com/content/dam/avianca_new/destinos/semana/gig/1-porque-visitarla/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg",
-            "lat": -22.95187694840569,
-            "lng": -43.211901104296324
-        }  
+            "title": "Osaka, Japan",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Osaka_Castle_02bs3200.jpg",
+            "lat": 34.68660434392351,
+            "lng": 135.52589539103317
+        }   
     }
 ]
