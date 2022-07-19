@@ -114,29 +114,29 @@
     {
         "_id": "628d15686e8da9eeb8503264",
         "locations": [
-            { "lat": 28.513456195194316, "lng": -81.40739187925685 },
-            { "lat": 28.52774978444754, "lng": -81.35261599999892 },
-            { "lat": 28.519306, "lng": -81.376668 }
+            { "lat": -13.1615662073231, "lng": -72.53645396963857 },
+            { "lat": -13.15498040222542, "lng": -72.5250652906428 },
+            { "lat": -13.16435154421485, "lng": -72.5445155973467 }
         ],
         "endState": {
-            "title": "TEST 7",
-            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F06%2Fpulse2-2000.jpg",
-            "lat": 28.51970922142592,
-            "lng": -81.3767986085998
-        }
+            "title": "Machu Pichu, Peru",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg",
+            "lat": -13.16435154421485,
+            "lng": -72.5445155973467
+        }   
     },
     {
         "_id": "628d15686e8da9eeb8503265",
         "locations": [
-            { "lat": 55.69401029216563, "lng": 12.59420517806216 },
-            { "lat": 55.68730412137482, "lng": 12.590271921486199 },
-            { "lat": 55.692682223194396, "lng": 12.598692439242086 }
+            { "lat": -22.98711901523346, "lng": -43.20114255221288 },
+            { "lat": -22.933951551597875, "lng": -43.17621104874066 },
+            { "lat": -22.95187694840569, "lng": -43.211901104296324 }
         ],
         "endState": {
-            "title": "TEST 8",
-            "image": "https://scandification.com/wp-content/uploads/2021/12/Little-Mermaid-Statue-1-scaled.jpg",
-            "lat": 55.692682223194396,
-            "lng": 12.598692439242086
-        }
+            "title": "Rio de Janeiro, Brazil",
+            "image": "https://www.avianca.com/content/dam/avianca_new/destinos/semana/gig/1-porque-visitarla/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg",
+            "lat": -22.95187694840569,
+            "lng": -43.211901104296324
+        }  
     }
 ]
