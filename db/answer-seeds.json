@@ -114,29 +114,29 @@
     {
         "_id": "628d15686e8da9eeb8503264",
         "locations": [
-            { "lat": 28.513456195194316, "lng": -81.40739187925685 },
-            { "lat": 28.52774978444754, "lng": -81.35261599999892 },
-            { "lat": 28.519306, "lng": -81.376668 }
+            { "lat": -13.1615662073231, "lng": -72.53645396963857 },
+            { "lat": -13.15498040222542, "lng": -72.5250652906428 },
+            { "lat": -13.16435154421485, "lng": -72.5445155973467 }
         ],
         "endState": {
-            "title": "TEST 7",
-            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F06%2Fpulse2-2000.jpg",
-            "lat": 28.51970922142592,
-            "lng": -81.3767986085998
-        }
+            "title": "Machu Pichu, Peru",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg",
+            "lat": -13.16435154421485,
+            "lng": -72.5445155973467
+        }   
     },
     {
         "_id": "628d15686e8da9eeb8503265",
         "locations": [
-            { "lat": 55.69401029216563, "lng": 12.59420517806216 },
-            { "lat": 55.68730412137482, "lng": 12.590271921486199 },
-            { "lat": 55.692682223194396, "lng": 12.598692439242086 }
+            { "lat": 34.70012656873035, "lng": 135.5238596665538 },
+            { "lat": 34.6954797193723, "lng": 135.51264661646132 },
+            { "lat": 34.68611306311686, "lng": 135.52608623520146 }
         ],
         "endState": {
-            "title": "TEST 8",
-            "image": "https://scandification.com/wp-content/uploads/2021/12/Little-Mermaid-Statue-1-scaled.jpg",
-            "lat": 55.692682223194396,
-            "lng": 12.598692439242086
-        }
-    }
+            "title": "Osaka, Japan",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Osaka_Castle_02bs3200.jpg",
+            "lat": 34.68611306311686,
+            "lng": 135.52608623520146
+        }   
+    }  
 ]
