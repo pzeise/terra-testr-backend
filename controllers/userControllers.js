@@ -18,7 +18,7 @@ router.post('/login', async (req, res) => {
     let user = await User.findOne({ googleId: payload?.sub })
         .populate('completed')
     if (!user) {
-        user = await new User({
+        user = new User({
             userName: payload?.name,
             avatar: payload?.picture,
             completed: [],

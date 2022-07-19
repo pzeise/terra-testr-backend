@@ -27,12 +27,13 @@ app.use(function(req, res, next) {
     })
     next()
 })
+
+
 app.use(cookieParser())
 
 //Controllers 
 const answerControllers = require('./controllers/answerControllers')
 const userControllers = require('./controllers/userControllers')
-
 
 app.use('/answer', answerControllers)
 app.use('/user', userControllers)

@@ -24,8 +24,7 @@ router.get('/forUser/:userId', (req, res) => {
     })
     .then(user => {
         user.completed.forEach(puzzle => {
-            console.log(puzzle)
-            let x = answers.findIndex(el => el._id.toString() == puzzle.id.toString())
+            let x = answers.findIndex(el => el._id.toString() === puzzle.id.toString())
             answers[x].show = true
             answers[x].hints = parseInt(puzzle.hints)
             console.log(answers[x])
