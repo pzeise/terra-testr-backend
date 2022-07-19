@@ -18,7 +18,7 @@ const AnswerSchema = new mongoose.Schema(
             lat: Number, 
             lng: Number
         },
-        show: {type: Boolean, default: false},
+        show: {type: Boolean, default: true},
         hints: Number
     }
 )
