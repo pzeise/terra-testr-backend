@@ -4,6 +4,7 @@ const axios = require('axios')
 
 const Answer = require('../models/answer-model')
 const User = require('../models/user-model')
+const { reset } = require('nodemon')
 
 
 
@@ -35,6 +36,35 @@ router.get('/forUser/:userId', (req, res) => {
     .catch(console.error)        
 })
 
+router.put('/:id/', (req, res) => {
+    let ans = req.body
+    Answer.findByIdAndUpdate(req.params.id, {
+        endState: {
+            title: ans.title,
+            image: ans.image,
+            lat: parseFloat(ans.Lat3),
+            lng: parseFloat(ans.Lng3)
+        },
+        locations: 
+            [{
+                lat: parseFloat(ans.Lat1),
+                lng: parseFloat(ans.Lng1)
+            },
+            {
+                lat: parseFloat(ans.Lat2),
+                lng: parseFloat(ans.Lng2)
+            },
+            {
+                lat: parseFloat(ans.Lat3),
+                lng: parseFloat(ans.Lng3)
+            }]
+    })
+    .then(answer => {
+        res.json(answer)
+    })
+    .catch(console.error)
+})
+
 router.post('/', (req, res) => {
     let ans = req.body
     Answer.create({
@@ -62,6 +92,14 @@ router.post('/', (req, res) => {
         answer.owner.push(ans.user)
         answer.save()
         res.json(answer)
+    })
+    .catch(console.error)
+})
+
+router.delete('/:id', (req, res) => {
+    Answer.findByIdAndDelete(req.params.id)
+    .then(element => {
+        res.json(element)
     })
     .catch(console.error)
 })
