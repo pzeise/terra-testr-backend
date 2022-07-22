@@ -31,7 +31,8 @@ Due to cross-domain restrictions and chosen deployment applications (Netlify and
     - REACT_APP_FRONT_END_DEV: Your frontend dev URL (default: http://localhost:3000/)
     - REACT_APP_MAPS_API_KEY: Your google API Key
     - CLIENT_ID: Your google Client ID
-5. Test the app functionality by running `npx nodemon server.js` to start the server. 
+5. Run the frontend by following the instructions in the repo linked above. 
+6. Test the app functionality by running `npx nodemon server.js` to start the server. 
 
 **Authors / Contributors**<br />
 Phil Zeise
