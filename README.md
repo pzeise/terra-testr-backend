@@ -28,7 +28,7 @@ Due to cross-domain restrictions and chosen deployment applications (Netlify and
 4. Assign the following env variables in an .env file at your root:
     - DEV_DB_URL: Your development database URL.
     - DB_URL: Your production database URL (if deploying).
-    - REACT_APP_FRONT_END_DEV: Your frontend dev URL (localhost)
+    - REACT_APP_FRONT_END_DEV: Your frontend dev URL (default: http://localhost:3000/)
     - REACT_APP_MAPS_API_KEY: Your google API Key
     - CLIENT_ID: Your google Client ID
 5. Test the app functionality by running `npx nodemon server.js` to start the server. 
